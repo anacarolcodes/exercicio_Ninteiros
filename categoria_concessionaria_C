@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main ()
+{
+    char CatVei;
+    printf("Digite a inicial do seu veiculo: ");
+    scanf ("%c", &CatVei);
+    
+    CatVei = tolower (CatVei);
+    
+    switch (CatVei) {
+        case 'a': printf("Automovel");
+        break;
+        
+        case 'm': printf("Moto");
+        break;
+        
+        case 'c': printf("Caminhao");
+        break;
+        
+        case 'o': printf("Onibus");
+        break;
+        
+        default:  printf("Categoria desconhecida");
+    }
+    system ("PAUSE");
+    return 0;
+}
