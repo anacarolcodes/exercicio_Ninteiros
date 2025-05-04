@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+int main ()
+{
+    char EstadoCivil;
+    printf("Digite a inicial do estado civil: ");
+    scanf(" %c", &EstadoCivil);
+    
+     EstadoCivil = tolower(EstadoCivil);
+    
+    switch (EstadoCivil) {
+        case 'c': printf("Casado");
+            break;
+        case 's': printf("Solteiro");
+            break;
+        case 'v': printf("Viuvo");
+            break;
+        default: printf("Estado civil desconhecido");
+            }
+        system ("PAUSE");
+    return 0;
+}
